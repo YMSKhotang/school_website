@@ -1,0 +1,38 @@
+{% extends 'blog/base.html' %}
+   
+{% block page_content %}
+    <div class="container mt-5">
+        <h2>Contact Us</h2>
+        {% if messages %}
+            <div class="alert alert-success" role="alert">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+        <form method="post" action="{% url 'contact' %}">
+            {% csrf_token %}
+            
+            <!-- Bootstrap form classes -->
+            <div class="mb-3">
+                {{ form.full_name.label_tag }}
+                {{ form.full_name }}
+            </div>
+            
+            <div class="mb-3">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+            </div>
+            
+            <div class="mb-3">
+                {{ form.message.label_tag }}
+                {{ form.message }}
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock page_content %}
+
+
+   
