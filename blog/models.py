@@ -34,9 +34,9 @@ class Comment(models.Model):
     
 class Contact(models.Model):
     full_name = models.CharField(max_length=60)
-    email = models.CharField(max_length=60)
+    phone_number = models.CharField(max_length=60)
     message = models.TextField()
 
     def __str__(self):
-        return f" {self.full_name} -  {self.email} " 
+        return f" {self.full_name} -  {self.phone_number} " 
     

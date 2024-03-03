@@ -12,6 +12,10 @@ from django.contrib import messages
 def home(request):
     return render (request,'blog/homepage.html')
 
+#gallery
+def gallery(request):
+    return render (request,'blog/gallery.html')
+
 #blog
 def blog_index(request):
     posts = Post.objects.all().order_by("-created_on")

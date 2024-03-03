@@ -1,0 +1,41 @@
+
+.custom_primary{
+    background-color: #BED1CF;
+    color:#BED1CF;
+}
+
+.custom_success{
+    background-color: #F6D776;
+    color:#F6D776;
+}
+.custom_light{
+    background-color: #FFF7F1;
+    color:#FFF7F1;
+}
+.custom_nav{
+    background-color: #BED1CF; 
+}
+.bg_footer{
+    background-color: #FFF7F1;
+}
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    
+  }
+  
+  .card:hover .card-img-overlay {
+    opacity: 0;
+  }
+  

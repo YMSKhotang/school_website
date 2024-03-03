@@ -15,9 +15,17 @@ class CommentForm(forms.Form):
         )
     )
 
+
 class ContactForm(forms.ModelForm):
     class Meta:
         model = Contact
-        fields = ['full_name', 'email', 'message']
+        fields = ['full_name', 'phone_number', 'message']
+        
+    widgets = {
+        'full_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Full Name'}),
+        'phone_number': forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Your Phone Number'}),
+        'message': forms.Textarea(attrs={'class': 'form-control', 'rows': '4', 'placeholder': 'Your Message'}),
+    }
+
 
 
