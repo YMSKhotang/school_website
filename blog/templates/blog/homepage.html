@@ -1,10 +1,6 @@
 {% extends 'blog/base.html'%}
 {% load static %}
 
-{% block page_title %}
-
-{% endblock page_title %}
-
 {% block page_content %}
 
 <!--carousel start-->
@@ -44,10 +40,8 @@
             <!-- left side-->
             <div class="col-sm-12 col-md-6 col-lg-6" data-aos="fade-right" data-aos-offset="250">
                 <h1> What do you <span class="text-primary"> want to know?</span></h1>
-                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.
+                <p> 
+                    YouMe School Khotang is an non-profitable organization that provides educational support to help pave the way for the future of children in khotang, Nepal.This organization was founded by its representative, Sharad Rai, when he was a university student with the thoughts of ``I want to open up a future for the children of my home country of Nepal!'' and ``I want to give back to my home country that has raised me!''
                 </p>
                 <!-- button-->
 
@@ -124,14 +118,14 @@
 <section class="services my-5 bg-light" id="services">
     <div class="container-fluid d-flex flex-column">
         <div class="text-center my-5">
-            <h1 data-aos="fade-up" data-aos-offset="200">Our <span class="text-primary">Services</span></h1>
+            <h1 data-aos="fade-up" data-aos-offset="200">Our <span class="text-primary">Courses</span></h1>
             <hr class="w-25 m-auto" />
         </div>
         <!-- to add cards-->
         <div class="row">
             <div class="col-sm-12 col-md-4 col-lg-4 col-12 mb-4" data-aos="flip-down" data-aos-offset="300">
-                <div class="card rounded shadow-lg">
-                    <img src="{% static 'images/lab.jpg' %}" class="card-img-top" alt="IT" height="300">
+                <div class="card ">
+                    <img src="{% static 'images/lab.jpg' %}" class="card-img-top rounded shadow-lg" alt="IT" height="300">
                     <div class="card-img-overlay">
                         <h5 class="card-title">Computer Programming</h5>
                         <p class="card-text">
@@ -174,10 +168,11 @@
 </section>
 <!-- Our Serives End-->
 
-<!-- gallery  start-->
+<!-- Founder  start-->
 <div class="container shadow mt-5">
-    <div class="col-12 p-0">
-        <h2 class="text-center border-bottom mb-0 p-4">Our <span class='text-primary'>Founder</span></h2>
+    <div class="text-center">
+        <h1>Our <span class="text-primary"> Founder </span></h1>
+        <hr class="w-25 m-auto " />
     </div>
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-sm-12 col-md-4 border-bottom p-4 d-flex justify-content-center align-items-center">
@@ -185,12 +180,21 @@
                 width="250">
         </div>
         <div class="col-sm-12 col-md-7 p-4">
-            <p> "  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. "</p>
-            <h3>Sarad  Rai</h3>
+            <p> 
+                Namaste. My name is Sharad Rai and I am the representative of the NPO YouMe Nepal. Although I currently live in Japan and worked for a Japanese company, I was born and raised in Nepal.he village of Durchhim in khotang District, where I was born, is located in a very rural area in Nepal. It was the kind of place where I had to spend an hour and a half every day to fetch water . It was a really empty place, so I often practiced whistling while riding on top of a water buffalo. There were also Bengal tigers in the area, so I couldn't go into the forest carelessly.When I was in the fourth grade of elementary school, I was selected as one of only 99 scholarship students selected every year from all over Nepal, and was able to receive a proper education in the capital, Kathmandu, with government money.Thanks to that, after graduating from high school, I was able to study abroad at a Japanese university on a scholarship, and got a job in Japan.
+
+ 
+                However, most of my classmates in my hometown did not graduate from high school. All of them go abroad to work as manual laborers.
+                why is it?
+                That's because they haven't received a proper education.
+
+ 
+            </p>
+            <h3> ~ Sarad  Rai</h3>
         </div>
     </div>
 </div>
-<!-- gallery end -->
+<!-- Founder end -->
 
 <!-- contact us start-->
 <section class="contact my-5" id="contact">
@@ -236,7 +240,3 @@
 
 {% endblock page_content %}
 
-<iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.1055164090517!2d86.58976437368409!3d27.184420248364567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e9359c906babcf%3A0x2c0155dd0f00ce43!2sYouMe%20School!5e0!3m2!1sen!2snp!4v1709172129076!5m2!1sen!2snp"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>

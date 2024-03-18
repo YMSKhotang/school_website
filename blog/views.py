@@ -1,12 +1,9 @@
 from django.shortcuts import render, redirect
 from blog.models import Category, Comment, Post, Contact
 from django.http import HttpResponseRedirect
-
-
-
-# Create your views here.
 from .forms import ContactForm, CommentForm
 from django.contrib import messages
+
 
 #home
 def home(request):
@@ -15,6 +12,7 @@ def home(request):
 #gallery
 def gallery(request):
     return render (request,'blog/gallery.html')
+
 
 #blog
 def blog_index(request):
@@ -101,3 +99,6 @@ def search(request):
     params={'allPosts': myPosts, 'query': query}
 
     return render(request, 'blog/search.html', params)
+
+
+

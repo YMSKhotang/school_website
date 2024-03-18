@@ -14,6 +14,7 @@ class CommentAdmin(admin.ModelAdmin):
 class ContactAdmin(admin.ModelAdmin):
     pass
 
+
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Post,PostAdmin)
 admin.site.register(Comment,CommentAdmin)
