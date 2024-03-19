@@ -7,6 +7,7 @@ Django==4.2.10
 django-bootstrap-icons==0.8.7
 django-bootstrap-v5==1.0.11
 django-filter==23.5
+django-paginator==0.2a3
 idna==3.6
 pillow==10.2.0
 python-dateutil==2.9.0.post0

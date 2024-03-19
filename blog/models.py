@@ -40,8 +40,9 @@ class Contact(models.Model):
     def __str__(self):
         return f" {self.full_name} -  {self.phone_number} " 
     
-
-
-
+class Gallery(models.Model):
+    gallery_image= models.ImageField(upload_to="gallery/")
+    created_date = models.DateTimeField(auto_now_add= True)
+    modified_date = models.DateTimeField(auto_now=True)
 
     
